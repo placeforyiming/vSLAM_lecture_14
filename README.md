@@ -2,7 +2,7 @@
 
 1. pull the ros docker image with :
 
-docker pull ros:melodic
+docker pull ros:noetic
 
 2. start and get into the docker container :
 
@@ -14,11 +14,11 @@ docker run -it  --name vslam_14  --mount type=bind,source=/home/yiming/Projects,
 
 apt-get update
 
-apt-get install ros-melodic-rviz
+apt-get install ros-noetic-rviz
 
 4. test
 
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 
 rosrun rviz rviz
 
