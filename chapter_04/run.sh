@@ -1,0 +1,2 @@
+./build/useSophus
+./build/plotTrajError

@@ -11,7 +11,7 @@ using Eigen::Quaterniond;
 using Eigen::Isometry3d;
 using Eigen::Vector3d;
 
-string trajectory_path = "/workspace/vSLAM_lecture_14/chapter_3/plotTraj/trajectory.txt";
+string trajectory_path = "/workspace/vSLAM_lecture_14/chapter_03/plotTraj/trajectory.txt";
 
 void drawTrajectory(vector<Isometry3d, Eigen::aligned_allocator<Isometry3d>>);
 
@@ -19,7 +19,7 @@ int main(int argc, char **argv){
     vector<Isometry3d, Eigen::aligned_allocator<Isometry3d>> poses;
     ifstream fin(trajectory_path);
     if (!fin) {
-        cout<<"fine not found"<<endl;
+        cout<<"file not found"<<endl;
         return 1;
     }
 
