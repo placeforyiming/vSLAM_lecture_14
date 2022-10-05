@@ -1,13 +1,14 @@
 set(CMAKE_CXX_FLAGS "-std=c++11")
 
 find_package(OpenCV REQUIRED)
-include_directories(${OpenCV_INCLUDE_DIRS})
 find_package(Pangolin)
-include_directories(${Pangolin_INCLUDE_DIRS} )
-include_directories("/usr/include/eigen3")
 find_package(Sophus REQUIRED)
-include_directories(${Sophus_INCLUDE_DIRS})
 find_package(FMT REQUIRED)
+
+include_directories("/usr/include/eigen3")
+include_directories(${OpenCV_INCLUDE_DIRS})
+include_directories(${Pangolin_INCLUDE_DIRS} )
+include_directories(${Sophus_INCLUDE_DIRS})
 
 add_executable(imageBasics imageBasics/imageBasics.cpp)
 add_executable(imageUndistort imageBasics/imageUndistort.cpp)
