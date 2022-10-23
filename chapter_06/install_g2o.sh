@@ -5,6 +5,7 @@ apt-get install libsuitesparse-dev
 apt-get install libcxsparse3
 apt-get install libcholmod3
 
+
 git clone https://github.com/RainerKuemmerle/g2o.git
 cd g2o
 git checkout 20201223_git
