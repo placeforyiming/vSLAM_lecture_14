@@ -1,6 +1,6 @@
 # vSLAM_lecture_14
 
-Code implementation of the book  https://github.com/gaoxiang12/slambook2 . I add the bash file to install some required packages and skip some chapters that not interested.
+Code implementation of the book  https://github.com/gaoxiang12/slambook2 . I add the bash file to install some required packages and skip some chapters that I'm currently not interested.
 
 Prepare the docker environment:
 ```
