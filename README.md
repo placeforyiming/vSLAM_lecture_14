@@ -1,10 +1,9 @@
 # vSLAM_lecture_14
 
-Code implementation of the book  https://github.com/gaoxiang12/slambook2
-I skip some chapters that not interested.
+Code implementation of the book  https://github.com/gaoxiang12/slambook2 . I skip some chapters that not interested.
 
 Prepare the docker environment:
-
+'
 docker pull ros:noetic
 
 sudo xhost +local:root
@@ -14,6 +13,7 @@ docker run -it  --name vslam_14  --mount type=bind,source=/home/yiming/Projects,
 apt-get update
 
 apt-get install ros-noetic-rviz
+'
 
 Test the ros docker env:
 
