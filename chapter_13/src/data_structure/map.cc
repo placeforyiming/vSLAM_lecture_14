@@ -1,6 +1,7 @@
 #include <myslam/data_structure/map.hh>
 #include <myslam/data_structure/map_point.hh>
 #include <myslam/data_structure/frame.hh>
+#include <myslam/data_structure/feature.hh>
 
 namespace myslam {
 
@@ -14,7 +15,7 @@ void Map::InsertKeyFrame(Frame::Ptr frame) {
         active_keyframes_[frame->keyframe_id_] = frame;
     }
 
-    if (active_keyframes_.size() > num_active_keyframes_) {
+    if (active_keyframes_.size() > static_cast<int>(num_active_keyframes_)) {
         RemoveOldKeyframe();
     }
 }

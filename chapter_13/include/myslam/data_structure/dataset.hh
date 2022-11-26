@@ -29,6 +29,6 @@ class Dataset {
     std::string dataset_path_;
     int current_image_index_ = 0;
 
-    std::vector<Camera::Ptr> cameras_;
+    std::vector<std::shared_ptr<Camera>> cameras_;
 };
 }

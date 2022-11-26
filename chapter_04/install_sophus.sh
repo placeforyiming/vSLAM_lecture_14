@@ -3,7 +3,7 @@ cd fmt
 git checkout 8.1.1
 mkdir build
 cd build
-cmake ..
+cmake -DBUILD_SHARED_LIBS=True ..
 make -j4
 make install
 cd ..

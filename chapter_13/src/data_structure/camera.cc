@@ -4,9 +4,13 @@ namespace myslam {
 
 Camera::Camera() {
 }
-
 Vec3 Camera::world2camera(const Vec3 &p_w, const SE3 &T_c_w) {
     return pose_ * T_c_w * p_w;
+}
+
+Vec3 Camera::camera2world(const Vec3 &p_c, const SE3 &T_c_w) {
+    return T_c_w.inverse() * pose_inv_ * p_c;
+}
 
 Vec2 Camera::camera2pixel(const Vec3 &p_c) {
     return Vec2(

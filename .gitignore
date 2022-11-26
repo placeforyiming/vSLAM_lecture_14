@@ -6,3 +6,6 @@ chapter_05/opencv/
 chapter_06/ceres-solver/
 chapter_06/g2o/
 chapter_09/*.ply
+chapter_13/dataset/
+chapter_13/lib/
+chapter_13/bin/

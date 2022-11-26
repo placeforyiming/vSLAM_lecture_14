@@ -12,7 +12,7 @@
 #include <fstream>
 #include <unordered_map>
 #include <vector>
-
+#include <condition_variable>
 
 #include <glog/logging.h>
 #include <opencv2/core/core.hpp>
